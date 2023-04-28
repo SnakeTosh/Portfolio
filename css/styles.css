@@ -1,0 +1,376 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Oswald:wght@500&family=Poppins:wght@500&display=swap');
+
+
+img.top{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+img.bot{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+body{
+    background: linear-gradient(135deg,#e91e63,#673ab7);
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin-top : 0px;
+    margin-left: 0px;
+    font-family: "Quattrocento Sans";
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contain{
+    flex: 1 0 auto;
+}
+
+footer{
+    flex-shrink: 0;
+}
+
+/* - - - - - - - NAVBAR - - - - - - */
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+    section.top-page{
+    /*background-color: #673ab7; */
+    width: 100%;
+    margin-top: 3%;
+    align-items: center;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: space-around;
+    font-size: 35px;
+    margin: auto;
+    /* background-color: #30c4c9; */
+    width: 70%;
+    height: 100%;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0, auto;
+    /* padding: 0, 10px; */
+    /* background-color: #0a0a0a; */
+}
+
+section.top-page nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #0a0a0a;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+section.top-page nav a:hover{
+    color: #ffffff;
+}
+section.top-page nav a:hover:after{
+    width: 100%;
+}
+
+/* - - - - - - - BODY - - - - - - */
+
+section.body{
+
+    margin: 9% auto;
+    width: 80%;
+    height: 60%;
+    /* background: #078a07; */
+    position: relative;
+    
+}
+
+div.bodyL{
+    /* background-color: #673ab7; */
+    width: 100%;
+    /* height: 55%; */
+    height: 50%;
+}
+
+div.Presentation{
+    display: flex;
+    width: 100%;
+    /* background-color: black; */
+
+}
+
+div.Presentation h1 {
+    font-size: 40px;
+    width: 100%;
+    color: #FFFFFF;
+    /* background-color: blue; */
+
+    }
+
+span.red{
+    color: rgb(75, 5, 5);
+    /* background-color: #673ab7; */
+}
+
+div.Suite h2{
+    color: darkgoldenrod;
+    font-size: 40px;
+    margin-left: 50px;
+    /* background-color: cadetblue; */
+    
+}
+
+div.Suite h3{
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-left: 20px;
+    /* background-color: chartreuse; */
+
+}
+
+div.bodyR{
+
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* background-color: aqua; */
+
+    
+}
+
+div.bodyR h1{
+    
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 0;
+    width: 350px;
+    height: 30%;
+    margin: auto;
+    min-width: 265px;
+}
+
+div.bodyR nav{
+    
+
+    margin: auto;
+    width: 350px;
+    min-width: 265px;
+    display: block;
+
+}
+
+nav p.top{
+    /* background-color: #673ab7; */
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav p.bot{
+    /* background-color: #49b73a; */
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* - - - - - - - END-PAGE - - - - - - */
+
+
+footer.End-page{
+    
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	height: auto;
+	font-family: 'poppins';
+    width: 100vw;
+    font-size: 22px;
+	padding: 10px;
+    /* background-color: brown; */
+}
+
+
+div.copy {
+    color: white;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+div.icone{
+	display: flex;
+}
+
+div.icone a i{
+    color: white;
+    font-size: 40px;
+    padding-left:30px ;
+}
+
+div.icone a i:hover{
+    color: #30c4c9;
+}
+
+
+
+/* - - - - - - - RESPONSIVE  1 - - - - - - */
+
+
+
+@media screen and (max-width:750px){
+
+    body{
+        overflow: scroll;
+    }
+
+    section.body{
+        height: 400px;
+    }
+
+    footer.End-page{
+
+        margin-top: 25vh;
+        
+    }
+
+}
+
+
+@media screen and (max-width:660px){
+
+    body{
+        overflow: scroll;
+    }
+    
+    section.body{
+
+        margin: 10%;
+        /* background: #078a07; */
+        height: 600px;
+        
+    }
+
+    div.Suite h2{
+        color: darkgoldenrod;
+        font-size: 40px;
+        /* background-color: cadetblue; */
+        margin-left: 0;
+        
+    }
+
+    footer.End-page{
+    
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'poppins';
+        width: 100vw;
+        font-size: 22px;
+        padding: 2px;
+        /* background-color: brown; */
+        display: block;
+
+        
+    }
+
+    div.icone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.icone a i{
+        color: white;
+        font-size: 40px;
+        padding-left:0px ;
+        margin: 10px;
+    }
+
+    div.bodyL{
+        /* background-color: #673ab7; */
+        width: 100%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:450px){
+    div.bodyR{
+
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* background-color: aqua; */
+        
+    }
+
+    div.bodyR h1{
+    
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        padding: 5px 0;
+        width: 100%;
+        height: 30%;
+        margin: auto;
+    }
+    
+    div.bodyR nav{
+        
+    
+        margin: auto;
+        height: 70%;
+        width: 100%;
+    
+    }
+
+    nav p.top{
+        margin: auto;
+        margin-top: 20px;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    nav p.bot{
+        margin: auto;
+        margin-top: 20px;
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
